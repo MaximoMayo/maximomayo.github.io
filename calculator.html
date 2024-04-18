@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is an example of">
+        <title></title>
+    </head>
+
+    <body>
+
+        <!--Form to make the calculator-->
+        <form>
+            <!--User interface for the calculator; entering numbers-->
+            Value 1: <input type="text" id="value1">
+            Value 2: <input type="text" id="value2">
+            Operator: 
+            <!--User interface for calculator; choosing operator-->
+            <select name="" id="operator">
+                <option value="add">Add</option>
+                <option value="min">Minus</option>
+                <option value="div">Divide</option>
+                <option value="mul">Multiply</option>
+                <option value="mod">Remainder</option>
+            </select>
+            <!--Submitting the commands to execute onclick event-->
+            <button type="button" name="button" onclick="calc()">Calculate</button>
+        </form>
+        <br>
+        <!--printing out answer-->
+        <div>Answer: </div>
+        <div id="result">
+
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
