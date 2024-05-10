@@ -24,19 +24,6 @@ const altText = {
     pictureThree: "Text change; click event",
     pictureFour: "Color change; click event"
 }
-
-const descriptionPara = {
-    pictureZero: "This exercises focuses on the realtime changes JavaScript can have on a website. " 
-    + "With the pre-established canvas provided, I had to use add an EventListener so that pressing one of the "
-    + "WASD keys would change the the XY variables. I had trouble with this exercise for a while before realizing I had "
-    + "drawCircle in my function so it can display on the screen.",
-    pictureOne: "This exercise focuses on the real life implementation of updating the HTML throught JavaScript by using DOM. "
-    + "Using the basics of createElement, appendChild, and remove; DOM functions can really help with recording and display of "
-    + "interactive elements.",
-    pictureTwo: "",
-    pictureThree: "",
-    pictureFour: ""
-}
 /* Looping through images */
 
 //forEach used instead of a for loop
@@ -51,7 +38,6 @@ imageFiles.forEach((filename,index) => {
     newImage.addEventListener('click', () => {
         displayedImage.setAttribute('src', filename);
         displayedImage.setAttribute('alt', altText[`picture${index}`])
-        explaination.textContent = descriptionPara[`picture${index}`];
     })
 })
 
