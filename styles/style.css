@@ -5,6 +5,7 @@ body{
     background-image: linear-gradient(to bottom right,#009245, #FCEE21);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: helvetica, arial, sans-serif;
 }
 body#flexBody{
     display: flex;
@@ -64,6 +65,13 @@ main{
     padding-left: 40px;
 }
 
+/* Error Notice Styles */
+.errorNotice{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
 /* Footer Styles */
 footer{
     display: flex;
@@ -103,6 +111,9 @@ footer{
     text-align: right;
     width: 4px; /* Adjust this as needed */
   
+  }
+  div#answer{
+    color: black;
   }
 
 /*Media styles */
