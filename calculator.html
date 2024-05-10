@@ -4,12 +4,29 @@
         <meta charset="utf-8">
         <meta name="description" content="This is an example of">
         <title></title>
+        <link rel="stylesheet" href="/styles/style.css">
     </head>
 
-    <body>
+    <body id="flexBody">
+        <header>
+            <!--Navigation links-->
+            <nav id="navLinks">
+                <ul>
+                    <a href="index.html"><li>Home</li></a> 
+                    <a href="projects.html"><li>Projects</li></a>
+                    <a href="experience.html"><li>Experience</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="calculator.html"><li>Calculator</li></a>
+                </ul>
+            </nav>
+        </header>
 
+        <div class="mainContent">
+        <h1>Welcome to the world famous: simple calculator</h1>
+        <img id="simpleCalcImg" src="https://images.pexels.com/photos/6958525/pexels-photo-6958525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="simple calculator">
         <!--Form to make the calculator-->
-        <form>
+        <form class="bitDiff">
             <!--User interface for the calculator; entering numbers-->
             Value 1: <input type="text" id="value1">
             Value 2: <input type="text" id="value2">
@@ -25,12 +42,18 @@
             <!--Submitting the commands to execute onclick event-->
             <button type="button" name="button" onclick="calc()">Calculate</button>
         </form>
+        </div>
         <br>
         <!--printing out answer-->
         <div>Answer: </div>
         <div id="result">
 
         </div>
+        <footer>
+            <p>&copyMaximoMayo</p>
+            <p><a href= "mailto:max2149086@maricopa.edu">Student Email</a></p>
+            <p><a href="tel:6027054312" >Phone Number</a></p>
+        </footer>
 
         <script src="main.js"></script>
     </body>

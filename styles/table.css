@@ -1,0 +1,24 @@
+/* Table Styles */
+
+table{
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+table td{
+    border-color: rgb(29, 104, 29);
+}
+
+table img{
+    width: 100%;
+    height: 350px;
+}
+
+thead td#headTD{
+    text-align:center;
+}
+
+.exampleCode{
+    display: flex;
+    justify-content: center;
+}

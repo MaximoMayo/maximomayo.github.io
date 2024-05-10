@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="/style.css" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/table.css">
 </head>
 
 <!--This is the body with links and main content-->
@@ -14,10 +15,10 @@
         <!--Navigation links-->
         <nav id="navLinks">
             <ul>
-                <a href="#"><li>Home</li></a> 
-                <a href="#"><li>Projects</li></a>
-                <a href="#"><li>Experience</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="index.html"><li>Home</li></a> 
+                <a href="projects.html"><li>Projects</li></a>
+                <a href="experience.html"><li>Experience</li></a>
+                <a href="contact.html"><li>Contact</li></a>
                 <a href="calculator.html"><li>Calculator</li></a>
             </ul>
         </nav>
@@ -25,21 +26,50 @@
 
     <!--Topic and description-->
     <main>
-        <div class="">
-            <h1>Max's Project Portfolio</h1>
+        <div class="mainContent">
+            <h1>Maxs Project Portfolio</h1>
+            <img id="ssnMainImage" src="./CIS166AA/images/Screenshot 2024-05-09 194958.png" alt="Carousel I created with bootstrap">
             <p class="mainTopicDescription">I want to create a website where I can showcase 
                 my projects and use it as a pseudo resume to 
                 exemplify my skills as a developer.</p>
-            <p>This is another paragraph.</p>
+            <p class="mainTopicDescription">I have learned a tremendous amount of valuable concepts and applications of elements with JavaScript.
+                From the basics with variables, strings and simple calculations to the complexaties of objects, arrays, and
+                functions.
+            </p>
            </div>
     </main>
+    <div class="exampleCode">
+        <table>
+            <thead>
+                <tr>
+                    <td id="headTD" colspan="2"><p>Images of code</p></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img id="firstHeight" src="/CIS166AA/images/Screenshot 2024-04-23 133847.png" alt="city view"></td>
+                    <td><img src="/CIS166AA/images/Screenshot 2024-04-25 133639.png" alt="city view"></td>
+                </tr>
+                <tr>
+                    <td id="#bottomTier"><img src="/CIS166AA/images/Screenshot 2024-04-25 155648.png" alt="city view"></td>
+                    <td id="#bottomTier"><img src="/CIS166AA/images/Screenshot 2024-04-29 133105.png" alt="city view"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="exampleCode">
+        <p>Even through these screenshots of simple uses of JavaScript, 
+            I have learned how to read and expect the outcome of each line of code.</p>
+    </div>
 
     <!--This is the footer with my email in it-->
     <footer>
-        <a href= "mailto:max2149086@maricopa.edu">Student Email</a>
+        <p>&copyMaximoMayo</p>
+        <p><a href= "mailto:max2149086@maricopa.edu">Student Email</a></p>
+        <p><a href="tel:6027054312" >Phone Number</a></p>
     </footer>
 
-<script src="/main.js"></script>
-<script src="/hello.js"></script>
+<script src="/scripts/main.js"></script>
+<!--<script src="/scripts/hello.js"></script>-->
 </body>
 </html>

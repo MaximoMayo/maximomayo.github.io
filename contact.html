@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PageTitle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+</head>
+
+<body>
+  <header>
+    <!--Navigation links-->
+    <nav id="navLinks">
+        <ul>
+            <a href="index.html"><li>Home</li></a> 
+            <a href="projects.html"><li>Projects</li></a>
+            <a href="experience.html"><li>Experience</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="calculator.html"><li>Calculator</li></a>
+        </ul>
+    </nav>
+</header>
+       
+    <div id="emailError"></div>
+    <div id="phoneError"></div>
+    <form>
+      <h2>Please inform us of any issues you may have</h2>
+      <ul>
+        <li>
+          <label for="uname">Username</label>
+          <input type="text" name="uname" id="uname" placeholder="Username" min="5" max="20" required>
+        </li>
+        <li>
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
+        </li>
+        <li>
+          <label for="phone">Phone number <span style="font-size: 0.75em;">(optional)</span></label>
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" max="15" placeholder="555-555-1234">
+        </li>
+        <li>
+          <label for="comment">Request</label>
+          <textarea name="comment" id="comment" rows="4" cols="50" placeholder="Please describe your support request..." max="200"></textarea>
+        </li>
+        <li>
+          <button>Submit comment</button>
+        </li>
+      </ul>
+    </form>
+    <div class="imageContainer">
+    <img id="oldPhone" src="https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+    alt="old rotor phone">
+  </div>
+   <!--This is the footer with my email in it-->
+   <footer>
+    <p>&copyMaximoMayo</p>
+    <p><a href= "mailto:max2149086@maricopa.edu">Student Email</a></p>
+    <p><a href="tel:6027054312" >Phone Number</a></p>
+</footer>
+    <script src="/scripts/contact.js"></script>
+</body>
+
+</html>

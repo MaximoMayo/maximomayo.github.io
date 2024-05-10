@@ -1,0 +1,118 @@
+/* Maximo Mayo 3/28/2024 */
+
+/*Body styles*/
+body{
+    background-image: linear-gradient(to bottom right,#009245, #FCEE21);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body#flexBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Header Styles */
+main{
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+/* Nav Styles */
+#navLinks{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#navLinks li{
+    display: inline;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    background-color:red;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+}
+
+/* Main Content */
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Image Styles */
+#ssnMainImage{
+    width:80%;
+}
+
+.codeImage{
+    width:50%;
+}
+
+#simpleCalcImg{
+    width: 50%;
+    padding-left: 40px;
+}
+
+/* Footer Styles */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Main Topic Styles */
+.mainTopicDescription{
+    line-height: 2em;
+}
+
+
+/* Form Styles */
+  form.bitDiff{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    padding-top: 50px;
+    line-height: 50px;
+  }
+  form h2 {
+    text-align: center;
+  }
+
+  label {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    text-align: right;
+    width: 4px; /* Adjust this as needed */
+  
+  }
+
+/*Media styles */
+@media only screen and (max-width: 480px) {
+    #ssnMainImage{
+        width:80%;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+}
