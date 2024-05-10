@@ -1,5 +1,7 @@
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
+const explaination = document.getElementById('.explaination');
+
 
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
@@ -17,18 +19,23 @@ const imageFiles = [
 const altText = {
     //had to change from normal number names to a zero based to get the index to make sense
     pictureZero: "Moving dot; keybind event",
-    pictureOne: "Text change; click event",
-    pictureTwo: "Updating cart; multiple events",
-    pictureThree: "FizzBuzz; if statements",
+    pictureOne: "Updating cart; multiple events",
+    pictureTwo: "FizzBuzz; if statements",
+    pictureThree: "Text change; click event",
     pictureFour: "Color change; click event"
 }
 
 const descriptionPara = {
-    pictureOne: "",
+    pictureZero: "This exercises focuses on the realtime changes JavaScript can have on a website. " 
+    + "With the pre-established canvas provided, I had to use add an EventListener so that pressing one of the "
+    + "WASD keys would change the the XY variables. I had trouble with this exercise for a while before realizing I had "
+    + "drawCircle in my function so it can display on the screen.",
+    pictureOne: "This exercise focuses on the real life implementation of updating the HTML throught JavaScript by using DOM. "
+    + "Using the basics of createElement, appendChild, and remove; DOM functions can really help with recording and display of "
+    + "interactive elements.",
     pictureTwo: "",
     pictureThree: "",
-    pictureFour: "",
-    pictureFive: ""
+    pictureFour: ""
 }
 /* Looping through images */
 
@@ -44,7 +51,7 @@ imageFiles.forEach((filename,index) => {
     newImage.addEventListener('click', () => {
         displayedImage.setAttribute('src', filename);
         displayedImage.setAttribute('alt', altText[`picture${index}`])
-        
+        explaination.textContent = descriptionPara[`picture${index}`];
     })
 })
 
